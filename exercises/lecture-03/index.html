@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 3 challenges</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <style>
+     p {
+        color: red;
+     }
+     #exciting {
+   background: #f69d3c;
+   border: 1px solid #696969;
+   padding: 10px; 
+}
+    </style>
+    <style type="text/css">
+     
+        body {
+        background: var(--bgColor);
+        }
+
+        div {
+        --bgColor: limegreen;
+        }
+        p {
+         background: var(--bgColor); 
+        }
+        
+    </style>
+</head>
+<body>
+
+    <h2>Сторінка Вікіпедії для мови CSS</h2>
+
+<iframe src="https://uk.wikipedia.org/wiki/CSS" title="Сторінка Вікіпедії для мови CSS"></iframe>
+
+ <p>This is my paragraph.</p>
+ <p style="color: blue;"></p>
+        
+       <!-- 
+           який колір буде мати текст This is my paragraph і чому.
+           Колір буде червоний, так як елемент Style знаходиться вище а саме у "head"
+       -->
+  
+
+       <p>Звичайний, нудний абзац. Намагайтеся не заснути.</p>
+       <p id="exciting">The most exciting paragraph on the page. One of a kind!</p>
+   
+       <div id="exciting">The most exciting paragraph on the page. One of a kind!</div>
+       <!-- Чи буде змінна --bgColor видимою для елемента body. Яким буде фон елемента body і чому.
+    Зміна не буде видимою так як в елементі style вказано  background: var(--bgColor) -->
+       <div>
+        <h3>Div 1</h3>
+            <p>Paragraph 1</p>
+        </div>
+    
+        <div>
+        <h3>Div 2</h3>
+            <p>Paragraph 2</p>
+        </div>
+    
+  
+</body>
+</html>

@@ -1,0 +1,6 @@
+/* main.css */
+@import url(/css/common.css);
+body {
+    --primary-text-color: #000;
+    --primary-bg-color: #fff;
+}

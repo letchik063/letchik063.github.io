@@ -1,0 +1,10 @@
+/* app.css */
+
+body {
+    color: var(--main-color);
+
+}
+
+a {
+    color: var(--anchor-color);
+}

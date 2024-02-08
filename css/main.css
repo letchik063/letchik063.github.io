@@ -1,5 +1,11 @@
 /* main.css */
 @import url(/css/common.css);
+@import url(/css/nav.css);
+@import url(/css/hero.css);
+@import url(/css/catalog.css);
+@import url(/css/footer.css);
+/*@import url(/css/app.css);*/
+
 body {
     --primary-text-color: #000;
     --primary-bg-color: #fff;

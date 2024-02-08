@@ -1,8 +1,22 @@
+* {
+    margin: 0;
+}
 html {
-    --primary-text-color: #000;
-    --primary-bg-color: #fff;
+   --main-color: #009;
+   --anchor-color: #333;
+   --anchor-active-color: salmon;
 }
-footer {
-    --footer-text-color: #fff;
-    --fuuter-bg-color: #000;
+
+body {
+    color: var(--main-color);
+
 }
+
+a {
+    color: var(--anchor-color);
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+}
+

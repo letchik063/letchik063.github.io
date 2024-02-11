@@ -10,3 +10,11 @@
 .page-footer ul > li > a {
     color: #ddd;
 }
+.footer-ligal {
+    background-color: #000;
+    color: #fff;
+}
+.footer-social {
+    color: #eee;
+    background-color: #333;
+}

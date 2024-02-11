@@ -1,4 +1,5 @@
 /* main.css */
+
 @import url(/css/common.css);
 @import url(/css/nav.css);
 @import url(/css/hero.css);
@@ -7,6 +8,28 @@
 /*@import url(/css/app.css);*/
 
 body {
-    --primary-text-color: #000;
-    --primary-bg-color: #fff;
+    font-family: var(--primary-font-family);
+    font-size: var(--primary-font-size);
+   color: var(--primary-text-color);
+   background-color: var( --primary-bg-color);
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 1.45rem;
+}
+
+h2 {
+    font-size: 1.3rem;
+}
+
+.list-unstyled {
+    list-style: none;
+}
+.footer-social a {
+    
+
 }

@@ -2,7 +2,35 @@
 
 .page-header {
     background-color: white;
-}
-.page-header .brand {
+> .brand {
     color: var(--anchor-active-color);
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+> .navbar {
+
+> a {
+font-size: 1.1rem;
+color: var(--anchor-color);
+}
+}
+> a:hover {
+    color: var(--anchor-active-color);
+    text-decoration: underline;
+}
+
+
+> .toolbar {
+    > a {
+        font-size: 1.1rem;
+        color: var(--ancor-color);
+    }
+    > a:hover {
+        color: var(--anchor-active-color);
+    }
+    > a:active {
+        color: blueviolet;
+    }
+}
 }

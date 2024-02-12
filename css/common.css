@@ -5,12 +5,17 @@
     margin: 0;
 }
 
-html {
+:root {
     --primary-text-color: #000;
     --primary-bg-color: #fff;
     --primary-font-family: 'Roboto', sans-serif; 
 	--primary-font-size: 0.875rem;
+    --anchor-active-color: salmon;
+    --anchor-color: #333;
+    --main-color: #009;
+    --currency-symbol: "\20B4";
 }
+
 footer {
     --footer-text-color: #fff;
     --fuuter-bg-color: #000;
@@ -39,4 +44,7 @@ h1 {
 
 h2 {
     font-size: calc(1.2rem + .8vw);
+}
+ul {
+    list-style: none;
 }

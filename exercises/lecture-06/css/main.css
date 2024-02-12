@@ -1,0 +1,62 @@
+a {
+    color: indigo;
+}
+/* unvisited link */
+a:link {
+    color: red;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: gold;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: salmon;
+  }
+  
+  /* selected link */
+  a:active {
+    color: orange;
+  }
+  input:in-range {
+    background-color: rgb(0 255 0 / 0.25);
+  }
+  input:out-of-range {
+    rgb(255 0 0);
+  }
+  .task4 > ul >li:first-child {
+    color: orange;
+  }
+  .task5 > ul :first-of-type {
+    color: orange;
+  }
+  .task6 > ul :last-of-type {
+    color: orange;
+  }
+  .task7 > ul > li:not(.first-item) {
+    color: orange;
+  }
+  .task7 > ul > li:not(.first-item):not(:last-of-type) {
+    background: yellow;
+    color: black;
+  }
+  .task8 > ol :nth-child(2) {
+    color: orange;
+  }
+  .task8 > :nth-child(2n) {
+    color: orange;
+  }
+  .task8 > ol :nth-child(2n + 6) {
+    color: orange;
+  }
+  h1.ua::before {
+    content: "Слава";
+  }
+  h1.hero::after {
+    content: "Слава!";
+  }
+  .cont::before {
+    content: "§";
+  }

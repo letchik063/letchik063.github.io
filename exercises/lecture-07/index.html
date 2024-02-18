@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <style>
+         .negative {
+        background: linear-gradient(
+          to left,
+          rgb(100, 175, 250) -50%,
+          rgb(0, 130, 250) -10%,
+          rgb(0, 110, 200) 0%,
+          rgb(0, 75, 150) 100%,
+          rgb(0, 50, 102) 150%
+        );
+        padding: 20px;
+        text-align: center;
+      }
+
+        .percents {
+        background: linear-gradient(
+          to bottom,
+          rgb(102, 255, 102) 2em,
+          rgb(0, 250, 0) 4em,
+          rgb(0, 201, 0) 8em,
+          rgb(0, 155, 0) 16em,
+          rgb(0, 100, 0) 32em,
+          rgb(0, 50, 0) 64em,
+          rgb(0, 20, 0) 128em
+        );
+        padding: 10px;
+        text-align: center;
+      }
+
+      .radial {
+        background: radial-gradient(ellipse at center, transparent, orange),
+          radial-gradient(ellipse at center, transparent, red);
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+</head>
+
+<body class="body">
+    
+    <h1>Gradient Text Glow</h1>
+
+    <div class="percents">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis cum magnam quae adipisci minima illum porro eius ipsa rem. Sequi eaque facere necessitatibus fugiat rerum facilis reprehenderit numquam dignissimos itaque!
+    </div>
+
+    <div class="negative">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis cum magnam quae adipisci minima illum porro eius ipsa rem. Sequi eaque facere necessitatibus fugiat rerum facilis reprehenderit numquam dignissimos itaque!
+    </div>
+
+    <div class="radial">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis cum magnam quae adipisci minima illum porro eius ipsa rem. Sequi eaque facere necessitatibus fugiat rerum facilis reprehenderit numquam dignissimos itaque!
+    </div>
+   
+    <svg width="140" height="140" xmlns="http://www.w3.org/2000/svg">
+        <rect
+          x="20"
+          y="20"
+          width="100"
+          height="100"
+          fill="lightgray"
+          stroke="#1c87c9"
+          stroke-width="4"
+        />
+      </svg>
+    
+      <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+        <circle
+          cx="100"
+          cy="70"
+          r="60"
+          stroke="red"
+          stroke-width="4"
+          fill="lightgray"
+        />
+      </svg>
+    
+      <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+        <circle
+          cx="100"
+          cy="100"
+          r="90"
+          stroke="black"
+          stroke-width="4"
+          fill="white"
+        />
+        <line
+          x1="100"
+          y1="100"
+          x2="150"
+          y2="100"
+          stroke="black"
+          stroke-width="6"
+        />
+        <circle cx="100" cy="100" r="4" fill="black" />
+      </svg>
+     <svg viewBox="-10 -10 120 120" xmlns="http://www.w3.org/2000/svg">
+        <polygon stroke="black" fill="none" points="50,0 21,90 98,35 2,35 79,90" />
+       </svg>
+</body>
+</html>

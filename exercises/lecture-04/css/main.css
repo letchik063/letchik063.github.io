@@ -15,7 +15,7 @@ font-weight: bold;
 color: green;
 }
 
-ul li {
+ul > li {
     font-weight: bold;
 }
 
@@ -30,7 +30,7 @@ section p {
     font-size: xx-large;
 }
 
-h1:first-of-type + h2 {
+h2:first-of-type {
     color: indigo;
 }
 
@@ -58,17 +58,17 @@ rgba: (000, 000, 000,1), (000, 000, 255,1), (000, 255, 000,1), (255, 000, 000,1)
 */
 
 .translucent-box {
-    background: hsla(0deg, 100%, 50%, 0.5);
+    background: hsl(0deg, 100%, 50%, 0.5);
 }
 
 html {
-    font-size: 100%;
+    font-size: 1em;
 }
 
 body {
-    font-size: 140%;
+    font-size: 1.4em;
 }
 
 h1 {
-    font-size: 240%;
+    font-size: 2.4em;
 }

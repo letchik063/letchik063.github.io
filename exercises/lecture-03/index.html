@@ -9,22 +9,14 @@
      p {
         color: red;
      }
-     #exciting {
-   background: #f69d3c;
-   border: 1px solid #696969;
-   padding: 10px; 
-}
-    </style>
-    <style type="text/css">
-     
-        body {
+   body {
         background: var(--bgColor);
         }
 
-        div {
+    div {
         --bgColor: limegreen;
         }
-        p {
+    p {
          background: var(--bgColor); 
         }
         
@@ -34,7 +26,7 @@
 
     <h2>Сторінка Вікіпедії для мови CSS</h2>
 
-<iframe src="https://uk.wikipedia.org/wiki/CSS" title="Сторінка Вікіпедії для мови CSS"></iframe>
+<iframe src="./https://uk.wikipedia.org/wiki/CSS" title="Сторінка Вікіпедії для мови CSS"></iframe>
 
  <p>This is my paragraph.</p>
  <p style="color: blue;"></p>
@@ -44,11 +36,18 @@
            Колір буде червоний, так як елемент Style знаходиться вище а саме у "head"
        -->
   
-
+<section>
        <p>Звичайний, нудний абзац. Намагайтеся не заснути.</p>
        <p id="exciting">The most exciting paragraph on the page. One of a kind!</p>
    
-       <div id="exciting">The most exciting paragraph on the page. One of a kind!</div>
+       <div id="exciting11">The most exciting paragraph on the page. One of a kind!</div>
+<style>
+       #exciting {
+   background: #f69d3c;
+   border: 1px solid #696969;
+   padding: 10px; }
+</style>
+</section>
        <!-- Чи буде змінна --bgColor видимою для елемента body. Яким буде фон елемента body і чому.
     Зміна не буде видимою так як в елементі style вказано  background: var(--bgColor) -->
        <div>

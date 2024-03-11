@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	
+</head>
+<body>
+   
+  <script>
+
+ // task  1
+      let x = 3
+        let y = 4    
+
+        x == 3     // true
+        x === "3"   // false
+        x != 5      //  true
+        x !== "5"   // true
+        X !== 3     // false
+        y > 5     // false
+        y >= 3    // true
+        y < 5      // true
+        y <= 2     // false
+        1 == true  //true
+        null == undefined   // true
+        NaN == NaN  // false    
+
+    
+    </script>
+    <script>
+             // task  2
+            let x = 3;
+            let y = 4;
+            let z = 5;
+
+            x ||= y;       //  3
+            x || (y = z);   //  3
+            x &&= y;     //   4
+            x && (y = z);   // 5
+            x ??= y;         // 3
+            x ?? (y = z);     // 3   
+
+    </script>
+
+    <script>
+        // task 3
+        let a = +prompt("enter number a:"); 
+           if (a === 3) {
+            alert( "Congratulations, You did it!");
+           }  else if (a < 3) {
+            alert( 'The number is short' );
+           }  else if (a > 3) {
+            alert( 'The number is too long' );
+           }
+
+           //  task  4.1
+            let day = prompt("enter the day of the week:  "); 
+              if (day == "Понеділок" || day == "Monday") {
+                alert(   "Start of the work week!");
+              }  else if  (day == "П'ятниця" || day == "Friday") {
+                alert( "End of the work week!" );
+              }   else {
+                alert("A regular day");
+              }
+
+          // task 4.2
+           let day2 = prompt("enter the day of the week:  "); 
+          switch (day2) {
+                case "Monday":
+                case  "Понеділок":  
+                    console.log("Start of the work week!");
+                    break;
+                case "Friday":
+                case "П'ятниця":
+                    console.log("End of the work week!");
+                    break;
+                default:
+                    console.log("A regular day");
+            }
+
+        // task 5.1
+          let score = +prompt("how many points did the student score? :");
+             if (score <= 50) {
+                alert(" призначити ступінь 'F'");
+             }  else if (score <= 70) {
+                 alert(" призначити ступінь 'D'");
+             } else if (score <= 80) {
+                 alert(" призначити ступінь 'C'");
+             } else if (score <= 90) {
+                 alert(" призначити ступінь 'B'");
+             }  else alert (" призначити ступінь 'A'");
+        
+        // task 5.2
+          let score2 = +prompt("how many points did the student score? :") <= 50 ?
+             alert(" призначити ступінь 'F'")
+             : score2 <= 70 ?
+              alert(" призначити ступінь 'D'")  
+             : score2 <= 80 ?
+               alert(" призначити ступінь 'C'")
+            : score2 <= 90 ?
+                alert(" призначити ступінь 'B'")
+            : alert(" призначити ступінь 'D'")
+
+            // task 6
+            
+                let firstName = null;
+                let lastName = undefined;
+                let username = firstName ? lastName : "Guest" 
+
+                console.log(username); // "Guest"
+
+
+               
+    </script>
+
+
+</body>
+</html>

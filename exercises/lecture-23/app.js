@@ -3,7 +3,7 @@ const alert = document.querySelector('.alert');
 // task 1
 
 let btn = document.querySelector('.btn-primary');
-btn.addEventListener('onclick', () => {
+btn.addEventListener('click', () => {
     alert.classList.add('alert-primary');
     alert.textContent = "A simple primary alert—check it out!";
 });

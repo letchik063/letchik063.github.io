@@ -1,0 +1,12 @@
+table {
+    width: 18rem;
+    text-align: center;
+    tr {
+        width: 100%;
+    }    
+
+    thead {
+        background-color: blue;
+        color: azure;
+    }
+}

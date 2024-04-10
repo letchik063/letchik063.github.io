@@ -42,20 +42,30 @@ const students = [
     {'firstName': 'Nary', 'lastName': 'Ann', 'degree': 336},
     {'firstName': 'John', 'lastName': 'Doe', 'degree': 400},
     {'firstName': 'James', 'lastName': 'Bond', 'degree': 700},
-]
-const table = document.createElement('table');
-table.innerHTML = `<tr style="background-color: blue; color: azure;">
-                      <th>firstName</th>
-                      <th>lastName</th>
-                      <th>degree</th>
-                  </tr>`;
-
-students.forEach(student => {
-    table.innerHTML += `<tr>
-                            <td>${student.firstName}</td>
-                            <td>${student.lastName}</td>
-                            <td>${student.degree}</td>
-                        </tr>`;
-});
-
-document.body.appendChild(table);
+    ];
+    
+    const table = document.createElement('table');
+    
+    // Додаємо рядок заголовків таблиці
+    const headerRow = document.createElement('tr');
+    headerRow.style.backgroundColor = 'blue';
+    headerRow.style.color = 'azure';
+    ['firstName', 'lastName', 'degree'].forEach(columnName => {
+    const th = document.createElement('th');
+    th.textContent = columnName;
+    headerRow.appendChild(th);
+    });
+    table.appendChild(headerRow);
+    
+    // Додаємо дані про студентів до таблиці
+    students.forEach(student => {
+    const row = document.createElement('tr');
+    ['firstName', 'lastName', 'degree'].forEach(columnName => {
+    const td = document.createElement('td');
+    td.textContent = student[columnName];
+    row.appendChild(td);
+    });
+    table.appendChild(row);
+    });
+    
+    document.body.appendChild(table);

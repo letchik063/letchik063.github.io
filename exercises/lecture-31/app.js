@@ -1,3 +1,7 @@
+// task 1 https://my-json-server.typicode.com/letchik063/db
+
+// task 2
+
 const url = "https://jsonplaceholder.typicode.com/posts";
 
 const template = (item) => `
